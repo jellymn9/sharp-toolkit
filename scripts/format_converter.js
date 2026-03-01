@@ -12,7 +12,7 @@ if (!inputArg || !outputArg || !formatArg) {
   console.error(
     "Usage: node scripts/convert.js --input=./input --output=./output --format=webp",
   );
-  console.error("Supported formats: jpeg, png, webp, avif, tiff");
+  console.error("Supported formats: jpg, webp, avif, tiff");
   process.exit(1);
 }
 
@@ -20,8 +20,8 @@ const inputDir = inputArg.split("=")[1];
 const outputDir = outputArg.split("=")[1];
 const format = formatArg.split("=")[1];
 
-const supportedFormats = ["jpeg", "jpg", "png", "webp", "avif", "tiff"];
-const supportedInputExts = [".jpg", ".jpeg", ".png", ".webp", ".avif", ".tiff"];
+const supportedFormats = ["jpg", "webp", "avif", "tiff"];
+const supportedInputExts = [".jpg", ".webp", ".avif", ".tiff"];
 
 if (!supportedFormats.includes(format)) {
   console.error(

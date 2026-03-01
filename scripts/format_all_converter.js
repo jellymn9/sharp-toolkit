@@ -10,7 +10,7 @@ const outputArg = args.find((a) => a.startsWith("--output="));
 
 if (!inputArg || !outputArg) {
   console.error(
-    "Usage: node scripts/convert-all-formats.js --input=./input/image.jpg --output=./output",
+    "Usage: node scripts/format_all_converter.js --input=./input/image.jpg --output=./output",
   );
   process.exit(1);
 }
