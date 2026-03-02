@@ -37,7 +37,7 @@ fs.mkdirSync(outputDir, { recursive: true });
     const pathInfo = path.parse(inputFile);
     const outputPath = path.join(
       outputDir,
-      `${pathInfo.name}${size.width}x${size.height}${pathInfo.ext}`,
+      `${pathInfo.name}_${size.width}x${size.height}${pathInfo.ext}`,
     );
 
     try {
